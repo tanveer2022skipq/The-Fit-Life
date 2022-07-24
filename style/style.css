@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-transform: capitalize;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    border: none;
+}
+
+a:visited{
+    color: var(--purple);
+}
+
+:root{
+    --lightpink: lightpink;
+    --lightblue: lightblue;
+    --black: black;
+    --lightgrey: lightgrey;
+    --purple: purple;
+    --brightblue: rgb(70,70,224);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--lightpink);
+    color: var(--black);
+}
+
+section{
+    padding: 10rem 5%;
+}
+
+/* -------------------------------------- header section starts ------------------------------  */
+
+.header{
+    padding: 2rem 3%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.header-1{
+    padding-bottom: 1rem;
+}
+
+.header-1 a{
+    display: inline-block;
+    font-size: 2rem;
+    color: var(--black);
+    border: 1px solid var(--black);
+    padding: 1rem 1.5rem;
+    
+}
+
+.header-1 span{
+    font-size: 2rem;
+    color: var(--brightblue);
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.header-2{
+    width: 100%;
+    padding: 1.5rem 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-2 .navbar a{
+    display: inline-block;
+    font-size: 1.5rem;
+    background: var(--lightblue);
+    border: 1px solid var(--black);
+    color: var(--black);
+    padding: 1.5rem;
+    font-weight: normal;
+}
+
+.header #menu-bar{
+    padding: 4px;
+    display: none;
+}
+
+.header #menu-bar img{
+    width: 25px;
+}
+
+/* ------------------------------------------ header section ends ----------------------------- */
+
+/* ------------------------------------------ home section ends ----------------------------- */
+
+.home-container{
+    width: 100%;
+    text-align: center;
+}
+
+.home-container h1{
+    display: block;
+    font-size: 24px;
+    background: var(--lightgrey);
+    border: 1px solid var(--black);
+    padding: 10px 0;
+}
+
+.home-container .content{
+    background: var(--lightgrey);
+    border: 1px solid var(--black);
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+footer{
+    padding: 2rem 5% 0 5%;
+    margin-top: 3rem;
+    font-size: 14px;
+}
+
+/* ------------------------------------------ home section ends ----------------------------- */
+
+
+
+/* ------------------------------------------ About-Us Page styling start ----------------------------- */
+
+p{
+    font-size: 14px;
+    color: var(--black);
+}
+
+a{
+    padding: 8px 32px;
+    font-size: 14px;
+    font-weight: bold;
+}
+a:visited{
+    color: var(--purple);
+}
+
+/* About-Us */
+
+.about{
+    padding: 5rem 5% 5rem 5%;
+}
+
+.about-us-parent{
+    display: flex;
+    height: 50vh;
+}
+.about-us-left-child{
+    width: 100%;
+    flex: 1;
+    margin: 10px;
+}
+.aboutus{
+    border: 1px solid var(--black);
+    background-color: var(--lightgrey);
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.about-us-right-child{
+    flex: 1;
+    border: 1px solid var(--black);
+    background-color: var(--lightgrey);
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    height: 40vh;
+    text-align: center;
+}
+
+.footer{
+    padding: 0rem 5%;
+    margin-top: 0;
+    font-size: 14px;
+}
+
+/* Why Join */
+.why-join-parent{
+    margin: 10px;
+}
+
+
+/* ------------------------------------------ About-us Page styling ends ----------------------------- */
+
+
+
+
+
+
+
+
+
+/*----------------------- media queries starts here ------------------------- */
+
+@media (max-width: 991px){
+
+    .header{
+        padding: 2rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    section{
+        padding: 5rem 5% 5rem 5%;
+    }
+
+    .header-2{
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+    }
+
+     .header-2 .navbar{
+        position: absolute;
+        background: var(--lightpink);
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 1rem 2rem;
+        display: none;
+    }
+
+    .header-2 .navbar.active{
+        display: initial;
+        
+    }
+
+    .header-2 .navbar a{
+        font-size: 1.7rem;
+        display: block;
+        padding: 1rem;
+        margin: 1.5rem 0;
+    }
+
+    .header #menu-bar{
+        display: inline-block;
+    }
+
+}
+
+
+@media (max-width: 450px){
+    
+    .header-1 a,
+    .header-1 span{
+        font-size: 1.5rem;
+    }
+
+    .home-container h1{
+        font-size: 18px;
+    }
+
+    .home-container .content{
+        font-size: 14px;
+    }
+
+    footer{
+        margin-top: 0;
+    }
+
+    /* about section  */
+
+    .about-us-parent{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+}
