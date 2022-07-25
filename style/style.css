@@ -1,0 +1,617 @@
+*{
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    border: none;
+}
+
+a:visited{
+    color: var(--purple);
+}
+
+:root{
+    --lightpink: lightpink;
+    --lightblue: lightblue;
+    --black: black;
+    --lightgrey: lightgrey;
+    --purple: purple;
+    --brightblue: rgb(70,70,224);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--lightpink);
+    color: var(--black);
+}
+
+section{
+    padding: 10rem 5%;
+}
+
+/* -------------------------------------- header section starts ------------------------------  */
+
+.header{
+    padding: 2rem 3%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.header .skip-link{
+    background: #fff;
+    position: absolute;
+    right: 0;
+}
+
+.header-1{
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.header-1  img{
+    width: 100px;
+    height: 100px;
+}
+
+.header-1 span{
+    font-size: 2rem;
+    color: var(--brightblue);
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.header-2{
+    width: 100%;
+    padding: 1.5rem 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.header-2 .navbar ul{
+    list-style: none;
+}
+
+.header-2 .navbar ul li{
+    position: relative;
+    float: left;
+    background: var(--lightblue);
+    border: 1px solid var(--black);
+}
+
+.header-2 .navbar ul li a{
+    display: block;
+    font-size: 16px;
+    padding: 20px;
+    color: var(--black);
+}
+
+.header-2 .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    display: none;
+}
+
+.header-2 .navbar ul li ul li {
+    width: 100%;
+}
+
+.header-2 .navbar ul li:focus-within > ul,
+.header-2 .navbar ul li:hover > ul{
+    display: initial;
+}
+
+.header #menu-bar{
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    display: none;
+}
+
+.header #menu-bar img{
+    width: 25px;
+    display: none;
+}
+
+.images{
+    padding: 0 5%;
+    width: 100%;
+    height: 50vh;
+}
+
+.images img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+/* ------------------------------------------ header section ends ----------------------------- */
+
+/* ------------------------------------------ home section ends ----------------------------- */
+
+#home{
+    padding-top: 5rem;
+}
+
+.home-container{
+    width: 100%;
+    text-align: center;
+}
+
+.home-container h1{
+    display: block;
+    font-size: 24px;
+    background: var(--lightgrey);
+    border: 1px solid var(--black);
+    padding: 10px 0;
+}
+
+.home-container .content{
+    background: var(--lightgrey);
+    border: 1px solid var(--black);
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+footer{
+    padding: 2rem 5% 0 5%;
+    margin-top: 3rem;
+    font-size: 14px;
+}
+
+footer .disclaimer{
+    padding: 10px 0;
+}
+
+footer .disclaimer h4{
+    padding: 10px 0;
+}
+
+footer .disclaimer p{
+    font-size: 12px;
+}
+
+/* ------------------------------------------ home section ends ----------------------------- */
+
+
+
+/* ------------------------------------------ About-Us Page styling start ----------------------------- */
+
+p{
+    font-size: 14px;
+    color: var(--black);
+}
+
+a{
+    padding: 8px 32px;
+    font-size: 14px;
+    font-weight: bold;
+}
+a:visited{
+    color: var(--purple);
+}
+
+/* About-Us */
+
+.about{
+    padding: 5rem 5% 5rem 5%;
+}
+
+.about-us-parent{
+    display: flex;
+}
+.about-us-left-child{
+    width: 100%;
+    flex: 1;
+    margin: 10px;
+}
+.aboutus{
+    border: 1px solid var(--black);
+    background-color: var(--lightgrey);
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.about-us-right-child{
+    flex: 1;
+    width: 100%;
+    margin: 10px;
+    /* text-align: center; */
+    border: 1px solid var(--black);
+}
+
+.about-us-right-child video{
+    width: 100%;
+    height: 100%;
+}
+
+.footer{
+    padding: 0rem 5%;
+    margin-top: 0;
+    font-size: 14px;
+}
+
+/* Why Join */
+.why-join-parent{
+    margin: 10px;
+}
+
+
+/* ------------------------------------------ About-us Page styling ends ----------------------------- */
+
+
+/* ------------------------------------------ Location Page styling ends ----------------------------- */
+
+.locations{
+    padding: 6rem 5% !important;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0;
+    padding: 10px 5px 5px 5px;
+}
+
+.container .links{
+    background: var(--lightgrey);
+    border: 1px solid var(--black);
+    width: 100%;
+    margin: 5px;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .links a{
+    padding: 20px 50px;
+}
+
+/* woodbridge  */
+
+.wood-content{
+    background: var(--lightgrey);
+    padding: 15px 10px;
+    border: 1px solid var(--black);
+    width: 100%;
+    height: 30%;
+}
+
+.wood-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.wood-links .links{
+    background: var(--lightgrey);
+    border: 1px solid var(--black);
+    padding: 8px;
+    width: 100%;
+}
+
+.wood-links .links:first-child{
+    margin-right: 15px;
+}
+
+.wood-links .links span{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.wood-links .links a{
+    padding: 0;
+}
+
+/* ------------------------------------------ Location Page styling ends ----------------------------- */
+
+/* cardio page  */
+
+.cardio-content{
+    text-align: start;
+}
+
+.cardio-content h3{
+    text-align: center;
+}
+
+.cardio-content ul{
+    padding: 5px 15px;
+}
+
+.cardio-content ul li span{
+    font-size: 12px;
+    text-transform: lowercase;
+}
+
+
+/* personal training  */
+
+.personal-training .box{
+    background: var(--lightgrey);
+    border: 1px solid var(--black);
+    margin: 5px;
+    height: 30vh;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.personal-training .box p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* packages pages   */
+
+.packages .links{
+    width: 30%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.packages .links a{
+    padding: 20px 50px;
+}
+
+/* monthly pages  */
+
+.silver-plan p{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 50px 0;
+}
+
+
+/* contact-us pages  */
+
+.contact-us .links {
+    display: block;
+    padding: 40px  0;
+}
+
+.contact-us .links span{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.contact-us .links a{
+    padding: 0;
+}
+
+
+.site-map .site-container{
+    padding: 10px;
+    border: 1px solid var(--black);
+}
+
+.site-map .site-container h3{
+    text-align: center;
+    font-size: 18px;
+}
+
+.site-map .site-container .site-map-links{
+    padding-top: 15px;
+}
+
+.site-map .site-container .site-map-links ul li{
+    list-style: none;
+}
+
+.site-map .site-container .site-map-links ul li a{
+    margin: 5px 0;
+}
+
+
+
+
+
+
+
+/*----------------------- media queries starts here ------------------------- */
+
+@media (max-width: 991px){
+
+    .header{
+        padding: 2rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header .skip-link{
+        top: 0;
+    }
+
+    section{
+        padding: 5rem 5% 5rem 5%;
+    }
+
+    .header-2{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+    }
+
+    .header-2 .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0; right: 0;
+        background: var(--lightpink);
+        display: none;
+    }
+
+    .header-2 .navbar ul li{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .header-2 .navbar ul li ul{
+        position: relative;
+        width: 100%;
+
+    }
+
+    .header-2 .navbar ul li ul li{
+        background: #eee;
+    }
+
+    .header-2 .navbar.active{
+        display: initial;
+        
+    }
+
+    .header-2 .navbar ul li a{
+        padding: 15px;
+    }
+
+    .header #menu-bar,
+    .header #menu-bar img{
+        display: inline-block;
+    }
+
+    /* personal-training */
+
+    .personal-training{
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .wood-content{
+        height: 50%;
+    }
+
+    .home-container h1{
+        font-size: 20px;
+    }
+
+    .wood-links{
+        flex-wrap: wrap;
+    }
+
+    .wood-links .links{
+        margin: 0 0 5px 0;
+    }
+
+    .wood-links .links:first-child{
+        margin-right: 0px;
+    }
+
+}
+
+@media (max-width: 500px){
+
+    .container{
+        flex-wrap: wrap;
+    }
+
+    /* packages pages  */
+
+    .packages .links{
+        width: 40%;
+    }
+
+}
+
+
+@media (max-width: 450px){
+    
+    .header-1 span{
+        font-size: 1.5rem;
+    }
+
+    .header-1 img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .home-container h1{
+        font-size: 18px;
+    }
+
+    .home-container .content{
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    footer{
+        margin-top: 0;
+    }
+
+    /* about section  */
+
+    .about-us-parent{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /* location page  */
+
+    .wood-links .links span{
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .wood-links .links a{
+        font-size: 12px;
+    }
+
+    /* cardio page  */
+
+    .cardio-content h3{
+        text-align: start;
+        padding: 5px 0;
+        font-size: 14px;
+    }
+
+    /* personal training  */
+
+    .personal-training .box{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    /* packages page  */
+
+    .packages .links{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    /* silver-plan and gold-plan  */
+
+    .silver-plan p{
+        font-size: 14px;
+        margin: 20px 0;
+    }
+    
+}
