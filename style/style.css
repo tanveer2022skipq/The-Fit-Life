@@ -104,6 +104,7 @@ section{
 }
 
 .header-2 .navbar ul li ul li {
+    background: #eee;
     width: 100%;
 }
 
